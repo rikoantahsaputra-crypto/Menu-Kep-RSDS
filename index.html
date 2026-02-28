@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MENU KEPEGAWAIAN</title>
+
+<style>
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:#ffffff;
+color:#0f172a;
+}
+
+/* ===== HEADER ===== */
+.header{
+position:relative;
+background:linear-gradient(135deg,#1e3a8a,#0f172a);
+padding:60px 20px 80px 20px;
+color:white;
+text-align:center;
+overflow:hidden;
+}
+
+.header::after{
+content:"";
+position:absolute;
+bottom:-40px;
+left:0;
+right:0;
+height:80px;
+background:white;
+border-radius:50% 50% 0 0;
+}
+
+.back-btn{
+position:absolute;
+top:20px;
+left:20px;
+background:white;
+color:#1e3a8a;
+padding:8px 14px;
+border-radius:8px;
+font-size:14px;
+font-weight:600;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+.logo{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.title{
+font-size:26px;
+font-weight:700;
+letter-spacing:1px;
+}
+
+/* ===== CONTENT ===== */
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:18px;
+padding:30px 20px;
+text-align:center;
+text-decoration:none;
+color:#0f172a;
+border:1px solid #e5e7eb;
+transition:.25s ease;
+box-shadow:0 4px 10px rgba(0,0,0,.05);
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#1e3a8a;
+box-shadow:0 12px 20px rgba(0,0,0,.15);
+}
+
+.icon{
+font-size:34px;
+margin-bottom:12px;
+color:#1e3a8a;
+}
+
+.card-title{
+font-size:15px;
+font-weight:600;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+.grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:600px){
+.grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+
+<a class="back-btn"
+href="https://script.google.com/macros/s/AKfycbxbesys9Nuvbv84jM-KaB93On1iXLuVWh5hj64yA12cJ0fhmo9RV1hg1X5bGEwIK-nAbQ/exec">
+⬅ Back
+</a>
+
+<div class="logo">🏛️</div>
+<div class="title">MENU KEPEGAWAIAN</div>
+
+</div>
+
+<div class="container">
+
+<div class="grid">
+
+<a class="card" target="_blank"
+href="https://script.google.com/macros/s/AKfycbxsxROvGV1nGBkdc_smvEnXC8lnaP3L7iRAlM1Q9Ur7NXSSJKwUMwpnGGi6F8ss8XDF/exec">
+<div class="icon">📂</div>
+<div class="card-title">MASUKAN ARSIP</div>
+</a>
+
+<a class="card" target="_blank"
+href="https://docs.google.com/spreadsheets/d/1o42Q2Ew649AZ-5CTy5kaBZyybRHN8gbnRGbEV0dtfzs/edit">
+<div class="icon">📊</div>
+<div class="card-title">DATA BASE</div>
+</a>
+
+<a class="card" target="_blank"
+href="https://script.google.com/macros/s/AKfycbzTQxBX0CoHkHSdjRTKvgYNP8TrKvAZaWFDykJRi6x1pFzBryuBAVOBSH2-t2J3YVqb/exec">
+<div class="icon">📑</div>
+<div class="card-title">ABK & ANJAB</div>
+</a>
+
+<a class="card" target="_blank"
+href="https://script.google.com/macros/s/AKfycbxOO_hNwkgYkPAbKIiANodH6CT1R0rx6Ebweu5C6ExOwpdE02druCPHOpwsSNG0IMsu/exec">
+<div class="icon">🆕</div>
+<div class="card-title">PEKERJAAN TERBARU</div>
+</a>
+
+<a class="card" target="_blank"
+href="https://script.google.com/macros/s/AKfycbywE0vgQNH0x_ytNP6MmIkEKF4USwl0WS0CLnvFjdgK52GezSTiTvkTWJM6-SpAvNJ0jA/exec">
+<div class="icon">💼</div>
+<div class="card-title">APLIKASI KEPEGAWAIAN</div>
+</a>
+
+<a class="card" target="_blank"
+href="https://docs.google.com/spreadsheets/d/1ibUVGYK_wARJFPoWXnUejoaOt0sOByOIhnpPpQ23BJs/edit?gid=1551769215#gid=1551769215">
+<div class="icon">📈</div>
+<div class="card-title">PAK INTEGRASI</div>
+</a>
+
+<a class="card" target="_blank"
+href="https://rikoantahsaputra-crypto.github.io/Admin-Cuti/">
+<div class="icon">📅</div>
+<div class="card-title">PROSES CUTI</div>
+</a>
+
+<a class="card" target="_blank"
+href="https://script.google.com/macros/s/AKfycbz7hMvTpIrCWRtIt97HkG9kDztVnRxaqhoZ8QL7BdC8oYbi-qr-oyY9UbzuRQPjQlhBJQ/exec">
+<div class="icon">💬</div>
+<div class="card-title">PESAN PEGAWAI</div>
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
