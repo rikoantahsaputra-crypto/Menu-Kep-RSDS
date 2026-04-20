@@ -9,15 +9,15 @@
 body{
 margin:0;
 font-family:'Segoe UI',sans-serif;
-background:#ffffff;
+background:linear-gradient(180deg,#f1f5f9,#ffffff);
 color:#0f172a;
 }
 
 /* ===== HEADER ===== */
 .header{
 position:relative;
-background:linear-gradient(135deg,#1e3a8a,#0f172a);
-padding:60px 20px 80px 20px;
+background:linear-gradient(135deg,#1e3a8a,#2563eb);
+padding:60px 20px 90px;
 color:white;
 text-align:center;
 overflow:hidden;
@@ -26,11 +26,11 @@ overflow:hidden;
 .header::after{
 content:"";
 position:absolute;
-bottom:-40px;
+bottom:-50px;
 left:0;
 right:0;
-height:80px;
-background:white;
+height:100px;
+background:#f1f5f9;
 border-radius:50% 50% 0 0;
 }
 
@@ -41,11 +41,16 @@ left:20px;
 background:white;
 color:#1e3a8a;
 padding:8px 14px;
-border-radius:8px;
-font-size:14px;
+border-radius:10px;
+font-size:13px;
 font-weight:600;
 text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,.2);
+box-shadow:0 4px 12px rgba(0,0,0,.2);
+transition:0.2s;
+}
+
+.back-btn:hover{
+transform:scale(1.05);
 }
 
 .logo{
@@ -63,41 +68,42 @@ letter-spacing:1px;
 .container{
 max-width:1100px;
 margin:auto;
-padding:40px 20px;
+padding:30px 20px;
 }
 
 .grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:20px;
+gap:18px;
 }
 
 .card{
-background:white;
-border-radius:18px;
-padding:30px 20px;
+background:rgba(255,255,255,0.8);
+backdrop-filter:blur(10px);
+border-radius:16px;
+padding:25px 15px;
 text-align:center;
 text-decoration:none;
 color:#0f172a;
-border:1px solid #e5e7eb;
-transition:.25s ease;
-box-shadow:0 4px 10px rgba(0,0,0,.05);
+border:1px solid rgba(255,255,255,0.3);
+transition:all .25s ease;
+box-shadow:0 6px 14px rgba(0,0,0,.08);
 }
 
 .card:hover{
-transform:translateY(-6px);
-border-color:#1e3a8a;
-box-shadow:0 12px 20px rgba(0,0,0,.15);
+transform:translateY(-6px) scale(1.02);
+box-shadow:0 14px 25px rgba(0,0,0,.15);
+border-color:#2563eb;
 }
 
 .icon{
-font-size:34px;
-margin-bottom:12px;
-color:#1e3a8a;
+font-size:32px;
+margin-bottom:10px;
+color:#2563eb;
 }
 
 .card-title{
-font-size:15px;
+font-size:14px;
 font-weight:600;
 }
 
@@ -105,8 +111,11 @@ font-weight:600;
 @media(max-width:900px){
 .grid{grid-template-columns:repeat(2,1fr);}
 }
+
 @media(max-width:600px){
 .grid{grid-template-columns:1fr;}
+.header{padding:50px 15px 80px;}
+.title{font-size:22px;}
 }
 </style>
 </head>
@@ -134,22 +143,30 @@ href="https://script.google.com/macros/s/AKfycbxsxROvGV1nGBkdc_smvEnXC8lnaP3L7iR
 <div class="icon">📂</div>
 <div class="card-title">MASUKAN ARSIP</div>
 </a>
-  <a class="card" target="_blank"
+
+<a class="card" target="_blank"
 href="https://script.google.com/macros/s/AKfycbzunspUHxlU6ezQj-OOtZmHS0TSl0m9wtWLDQ8U4vVbpOxTNi5_F7RIaQjQZlDagjeB/exec">
-<div class="icon">📂</div>
-<div class="card-title">Imput DATA PAK</div>
+<div class="icon">📝</div>
+<div class="card-title">INPUT DATA PAK</div>
 </a>
 
 <a class="card" target="_blank"
 href="https://docs.google.com/spreadsheets/d/1o42Q2Ew649AZ-5CTy5kaBZyybRHN8gbnRGbEV0dtfzs/edit">
 <div class="icon">📊</div>
-<div class="card-title">DATA BASE</div>
+<div class="card-title">DATABASE</div>
 </a>
 
 <a class="card" target="_blank"
 href="https://script.google.com/macros/s/AKfycbzTQxBX0CoHkHSdjRTKvgYNP8TrKvAZaWFDykJRi6x1pFzBryuBAVOBSH2-t2J3YVqb/exec">
 <div class="icon">📑</div>
 <div class="card-title">ABK & ANJAB</div>
+</a>
+
+<!-- ✅ TOMBOL BARU -->
+<a class="card" target="_blank"
+href="https://script.google.com/macros/s/AKfycbyyd9bAwmpWVmiUMODsvFcq7ZmtBYumpgamPZ4NLb2W9tN6wz0n2tO2HYpY5nMlhvZsZg/exec">
+<div class="icon">🚀</div>
+<div class="card-title">ABK 2026</div>
 </a>
 
 <a class="card" target="_blank"
@@ -181,14 +198,14 @@ href="https://script.google.com/macros/s/AKfycbz7hMvTpIrCWRtIt97HkG9kDztVnRxaqho
 <div class="icon">💬</div>
 <div class="card-title">PESAN PEGAWAI</div>
 </a>
-  
+
 <a class="card" target="_blank"
 href="https://script.google.com/macros/s/AKfycbxkx6hhPA2xofmzW-MIQqsA6_TigbA5A-ILyScOH-4plEvzfEwN2hPNMeSn3cqo_dqn/exec">
-<div class="icon">💬</div>
+<div class="icon">📁</div>
 <div class="card-title">PAK LAMA</div>
 </a>
-</div>
 
+</div>
 </div>
 
 </body>
